@@ -402,7 +402,17 @@ const carData = [
     { make: "FORD", model: "Fusion (الجيل الثاني)", year: "2013 – 2020", low: "H11 (هالوجين) أو D3S (زينون)", high: "9005 (HB3)", fog: "H11", notes: "الفئات الأعلى قد تأتي بـ LED مدمج." },
     { make: "FORD", model: "Explorer (الجيل 3)", year: "2002 – 2005", low: "9006 (HB4)", high: "9005 (HB3)", fog: "9140 (H10)", notes: "-" },
     { make: "FORD", model: "Explorer (الجيل 4)", year: "2006 – 2010", low: "9006 (HB4)", high: "9005 (HB3)", fog: "9145 (H10)", notes: "-" },
-    { make: "FORD", model: "Explorer (الجيل 5)", year: "2011 – 2019", low: "H11 (هالوجين) أو D3S (زينون)", high: "9005 (HB3)", fog: "H11", notes: "H11 هو المقاس الشائع في هذا الجيل." }
+    { make: "FORD", model: "Explorer (الجيل 5)", year: "2011 – 2019", low: "H11 (هالوجين) أو D3S (زينون)", high: "9005 (HB3)", fog: "H11", notes: "H11 هو المقاس الشائع في هذا الجيل." },
+
+    // Mitsubishi
+    { make: "Mitsubishi", model: "Lancer (الكريستالة - CK)", year: "1995 – 2003", low: "H4", high: "H4", fog: "H3", notes: "نظام لمبة واحدة للعالي والواطي." },
+    { make: "Mitsubishi", model: "Lancer (البومة - CS)", year: "2003 – 2014", low: "H4", high: "H4", fog: "H3", notes: "نظام لمبة واحدة للعالي والواطي." },
+    { make: "Mitsubishi", model: "Lancer (الشارك - EX)", year: "2008 – 2017", low: "H11 أو D2S (حسب التجهيز)", high: "9005 (HB3)", fog: "H11", notes: "الفئات بعدسات تستخدم غالباً D2S للواطي." },
+    { make: "Mitsubishi", model: "Pajero (V80/V90)", year: "2007 – 2021", low: "H11 أو D2S (زينون)", high: "9005 (HB3)", fog: "H11", notes: "تأكد من نوع المصباح الأمامي للواطي." },
+    { make: "Mitsubishi", model: "Eclipse Cross", year: "2018 – 2026", low: "H11 أو LED مدمج", high: "9005 (HB3) أو LED", fog: "H11 أو H16", notes: "الفئات العليا تأتي بإضاءة LED مدمجة غير قابلة للاستبدال." },
+    { make: "Mitsubishi", model: "Xpander", year: "2018 – 2026", low: "H4 أو LED مدمج", high: "H4 أو LED مدمج", fog: "H11", notes: "نظام H4 في الفئات الأساسية." },
+    { make: "Mitsubishi", model: "ASX", year: "2010 – 2024", low: "H11 أو D2S (زينون)", high: "9005 (HB3)", fog: "H11", notes: "-" },
+    { make: "Mitsubishi", model: "Attrage / Mirage", year: "2013 – 2026", low: "H4", high: "H4", fog: "H11", notes: "نظام لمبة واحدة للعالي والواطي." }
 ];
         
         // ** ملاحظات الماركات العامة (Brand Notes) **
@@ -479,6 +489,13 @@ const carData = [
                 <p><strong>المقاسات الأمريكية (9000 Series):</strong> 9006 (HB4) شائعة كـ واطي، و 9005 (HB3) شائعة كـ عالي في معظم الموديلات.</p>
                 <p><strong>H11:</strong> هو المقاس الأكثر شيوعاً لـ الواطي والضباب في الموديلات الحديثة (فيوجن، إيدج).</p>
                 <p><strong>H13 (9008):</strong> مقاس مزدوج الشعيرة (واطي وعالي في نفس اللمبة) وشائع في الشاحنات والسيارات الكبيرة مثل F-150.</p>
+            `,
+            "Mitsubishi": `
+                <p>🔑 <strong>ملاحظات هامة لميتسوبيشي:</strong></p>
+                <p><strong>نظام H4:</strong> اشتهرت ميتسوبيشي في أجيال التسعينات وأوائل الألفينات (مثل لانسر بوما وكريستالة) باستخدام لمبة واحدة (H4) للعالي والواطي معاً. عند التحويل لـ LED، يجب التأكد من اختيار لمبة H4 ذات جودة عالية لضمان التبديل الصحيح بين الشعاعين.</p>
+                <p><strong>الزينون الأصلي:</strong> في موديلات مثل "لانسر شارك" و"باجيرو"، قد تأتي السيارة بزينون أصلي مقاس D2S. تأكد من توفير بديل LED مناسب لمقاس D2S.</p>
+                <p><strong>لمبات الضباب:</strong> ميتسوبيشي غالباً ما تستخدم H3 في الموديلات القديمة و H11 في الحديثة.</p>
+                <p><strong>ملاحظة تقنية:</strong> في سيارة "لانسر شارك"، الفئات المزودة بعدسة (Projector) تستخدم غالباً D2S للواطي، بينما فئات العاكس (Reflector) تستخدم H11.</p>
             `
         };
 
