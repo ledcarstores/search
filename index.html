@@ -441,7 +441,7 @@ const carData = [
     // VW (تم توحيد الاسم من 'Volkswagen - VW' إلى 'VW')
     { make: "VW", model: "Polo (الجيل 4 - 9N)", year: "2002 – 2009", low: "H7 أو H4", high: "H1 أو H4", fog: "H3 أو H11", notes: "H4 (لمبة ثنائية) في الفئات الأساسية." },
     { make: "VW", model: "Golf (الجيل 4 - Mk4)", year: "1997 – 2003", low: "H7 (مع عدسة) أو H4", high: "H7 أو H3", fog: "H3", notes: "-" },
-    { make: "VW", model: "Golf (الجيل 5 - Mk5)", year: "2003 – 2008", low: "H7 (هالوجين) أو D2S (زينون)", high: "H7", fog: "H11", notes: "D2S هو المقاس القياسي لزينون المصنع." },
+    { make: "VW", model: "Golf (الجيل 5 - Mk5)", year: "2003 – 2008", low: "H7 (هالوجين) أو D2S (زينون)", high: "H7", fog: "H11", notes: "D2S هو زينون المصنع القياسي." },
     { make: "VW", model: "Golf (الجيل 6 - Mk6)", year: "2008 – 2013", low: "H7 (هالوجين) أو D1S (زينون)", high: "H7 أو H15", fog: "H8 أو H11", notes: "-" },
     { make: "VW", model: "Golf (الجيل 7 - Mk7)", year: "2013 – 2020", low: "H7 (هالوجين) أو D3S (زينون)", high: "H15 أو LED", fog: "H8 أو H11", notes: "بعض الفئات تستخدم 9005 (HB3) كضوء عالي." },
     { make: "VW", model: "Bora / Jetta (الجيل 4)", year: "1999 – 2005", low: "H7 أو H4", high: "H7 أو H3", fog: "H3", notes: "نفس المقاسات الشائعة لـ Golf Mk4." },
@@ -870,8 +870,8 @@ const carData = [
             const sunIcon = document.getElementById('sun-icon');
             
             // Check system preference first, then saved preference
-            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const themeToApply = savedTheme || (prefersDarkScheme ? 'dark' : 'light');
+            // Make dark mode the default if no preference is saved
+            const themeToApply = savedTheme || 'dark';
             
             if (themeToApply === 'light') {
                 document.body.classList.add('light-mode');
